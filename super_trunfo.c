@@ -9,6 +9,8 @@ int main() {
     float area1;
     float pib1; 
     int pontosTuristicos1;
+    float densidade1;
+    float pibPerCapita1;
 
     // Carta 2
     char estado2;
@@ -18,6 +20,8 @@ int main() {
     float area2;
     float pib2; 
     int pontosTuristicos2;
+    float densidade2;
+    float pibPerCapita2;
 
     // Entrada de dados - Carta 1
     printf("Carta 1:\n");
@@ -68,11 +72,11 @@ int main() {
     // Cálculos (sem estruturas de decisao ou repeticao)
     // Densidade = populacao / area
     // PIB per capita = PIB / populacao
-    float densidade1 = (float)populacao1 / (float)area1;
-    float pibPerCapita1 = (float)pib1 / (float)populacao1;
+    densidade1 = (float)populacao1 / area1;
+    pibPerCapita1 = pib1 / (float)populacao1;
 
-    float densidade2 = (float)populacao2 / (float)area2;
-    float pibPerCapita2 = (float)pib2 / (float)populacao2;
+    densidade2 = (float)populacao2 / area2;
+    pibPerCapita2 = pib2 / (float)populacao2;
 
     // Saida formatada
     printf("\nCarta 1:\n");
