@@ -117,10 +117,10 @@ int main() {
 
   // Batalha das cartas
 
-  superPoder1 = populacao1 + area1 + pib1 + pibPerCapita1 + densidade1 +
-                pontosTuristicos1;
-  superPoder2 = populacao2 + area2 + pib2 + pibPerCapita2 + densidade2 +
-                pontosTuristicos2;
+  superPoder1 = (float)populacao1 + area1 + pib1 + pibPerCapita1 +
+                pontosTuristicos1 - densidade1;
+  superPoder2 = (float)populacao2 + area2 + pib2 + pibPerCapita2 +
+                pontosTuristicos2 - densidade2;
 
   printf("Super Poder Carta 1 > Carta 2: %d\n", superPoder1 > superPoder2);
 
